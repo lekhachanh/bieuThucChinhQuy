@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function NguyenAm(str) {
+        regexp = /[ueoai]/g;
+        let result = str.match(regexp);
+        return result.length;
+    }
+    function PhuAm(str){
+        regexp = /[^ueoaiy]/g;
+        let result = str.match(regexp);
+        return result.length;
+    }
+    alert(NguyenAm("translate english to vietnamese"));
+    alert(PhuAm("c ronaldo is best player football "));
+
+</script>
+</body>
+</html>

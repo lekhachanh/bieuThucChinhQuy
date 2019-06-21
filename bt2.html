@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function DemSotu(str) {
+        regExp = /[A-Za-z ]$/;
+        if (regExp.test(str)) {
+            let arr = str.split(" ");
+            let count = 1;
+            for (let i=1; i<arr.length; i++) {
+                count++;
+            }
+            alert("số từ trong chuỗi là: "+ count);
+        }else {
+            alert("chuỗi của bạn đã nhập sai");
+        }
+
+    }
+    DemSotu("hôm nay nắng vãi chưởng ");
+
+</script>
+</body>
+</html>
